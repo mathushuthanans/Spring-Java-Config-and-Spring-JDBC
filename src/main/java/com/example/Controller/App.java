@@ -1,4 +1,4 @@
-package com.example;
+package com.example.Controller;
 
 import java.util.Scanner;
 
@@ -15,6 +15,7 @@ public class App
 {
 
     public static void main(String[] args) {
+        @SuppressWarnings("resource")
         ApplicationContext container = new AnnotationConfigApplicationContext(JavaConfig.class);
         AddDetails add = container.getBean(AddDetails.class);
         Scanner sc = new Scanner(System.in);
